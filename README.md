@@ -8,7 +8,8 @@ Esse é um boilerplate padrão para desenvolvimento flask rodando local ou em do
 
 ## Stack utilizada
 
-**Back-end:** Flask, MysqlAlchemy
+**Front-end:** Mdboostrap, jquery, ionsicon
+**Back-end:** Flask, MysqlAlchemy, FlaskRest_full, marshmallow-sqlalchemy
 
 
 ## Instalação
