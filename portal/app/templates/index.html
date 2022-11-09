@@ -7,21 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- CSS Personalizado -->
-  <!-- <link rel="stylesheet" href="../static/css/style.css" type="text/css"> -->
-  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" type="text/css">
-  <!-- Fontes Awesome
-  <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css"> -->
-  <script src="https://kit.fontawesome.com/3a2331ebdf.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="{{url_for('static', filename='css/sidebars.css')}}">
-
-  <!-- Jquery -->
-  <script src="{{url_for('static', filename='js/jquery-3.41.mim.js')}}"></script>
-  <!-- Favico -->
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+    <!-- MDBootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/mdb.min.css')}}" type="text/css">
+    <!-- Jquery -->
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <!-- Favico -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/mdb-favicon.ico') }}">
 
 </head>
 
@@ -31,83 +24,48 @@
 
 
     <div class="container-fluid" style="position: absolute;">
-       <div class="row">
-           <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
 
-            <!--cria container onde as mensagens serão exibidas-->
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <!--condição para exibição das mensagens-->
-            <ul id="messages" class="list-unstyled text-center">
-                <!--laço e repetição para exibição das mensagens-->
-            {% for message in messages %}
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>{{message}}</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-            {% endfor %}
-            </ul>
-        {% endif %}
-    {% endwith %}
+                <!--cria container onde as mensagens serão exibidas-->
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <!--condição para exibição das mensagens-->
+                <ul id="messages" class="list-unstyled text-center">
+                    <!--laço e repetição para exibição das mensagens-->
+                    {% for message in messages %}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>{{message}}</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% endwith %}
 
-           </div>
-       </div>
-        
-                <!--fim dos laços-->
+            </div>
+        </div>
+
+        <!--fim dos laços-->
     </div>
     <div class="container-fluid">
         <div class="row " style="height: 100vh;">
             <div v class="col-md-12 d-flex justify-content-center align-items-center">
 
-                <div class="row  bg-white" style="min-width: 65%; min-height: 65%;">
-                    <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center pt-5 pb-5 shadow">
-                        <!-- Logo -->
-                        
-                        <img src="{{url_for('static',filename='img/logo.png')}}" loading=lazy alt="ASDIGITAL Business" class="img-fluid ">
-                        
-                    </div>
-                    <div class="col-md-6  pt-5 pb-5 bg-principal d-flex justify-content-center align-items-center">
-                        
-                        <form method="POST" action='/' class="w-100 p-4" id="form_login">
-                            <h2 class="h2 mb-4">ERP - Login</h2>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email"
-                                    placeholder="name@example.com" name ='email' required>
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="password"
-                                    placeholder="Senha" name ='password' required>
-                                <label for="password">Senha</label>
-                                <div  class="text-end" id="passwordVisivel" style="position:absolute; right: 15px;  top: 20px;"><i class="fas fa-eye" id="passwordVisivelIco"></i></div>
-                            </div>
-                            <div>
-                                <a href="" class="btn btn-sm mt-3">Esqueceu sua senha?</a>
-                            </div>
-                            <button type="submit" onclick="carregamento(this)" class="btn btn-dark btn-lg mt-4">Entrar</button>
-                            
-                        </form>
-                    </div>
-                </div>
+              <div>
+                <h1 class="h1">Instalado com sucesso!</h1>
+              </div>
 
             </div>
         </div>
     </div>
-    <div class="load-login" style="display: none;">
-        <div class="container w-100 h-100">
-            <div class="row w-100 h-100">
-                <div class="col-md-12 d-flex justify-content-center align-items-center">
-                    <div class="spinner-border" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <script src="../static/js/index.js"></script>
-    <script src="../static/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/3a2331ebdf.js" crossorigin="anonymous"></script>
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Javascripts -->
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+    <!-- Mdb -->
+    <script src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
 
 
 </body>
