@@ -39,6 +39,12 @@ E rode os comandos abaixo
   pip3 install --upgrade pip && \
   pip3 install --no-cache-dir -r requirements.txt
 ```
+Para executar acesse o diretório portal
+e execute 
+
+```bash
+  python3 wsgi.py
+```
 
 ### Instalação Docker
 
