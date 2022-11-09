@@ -1,4 +1,4 @@
-from app import app, config,cache
+from app import app, cache
 from flask import Flask, render_template, request, redirect, session, flash, url_for, jsonify
 import requests
 import simplejson as json

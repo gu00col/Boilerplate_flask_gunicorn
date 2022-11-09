@@ -63,6 +63,11 @@ Após instalar o docker rode os comandos no diretório principal
    docker-compose up -d
 ```
 
+### Testando
+
+Para saber se deu certo acesse no navegador
+Web http://localhost:8000/
+API http://localhost:8000/api/teste
     
 ## Deploy
 
@@ -74,12 +79,16 @@ https://github.com/evertramos/nginx-proxy-automation
 
 Após o servidor Nginx instalado altere no arquivo docker-compose.yml
 
-
-
 ```bash
    - VIRTUAL_HOST=site.com.br
    - LETSENCRYPT_HOST=site.com.br
 ```
+Altere no arquivo wsgi.py no diretório app o parametro debug de True para False
+
+```bash
+app.run(debug=False, host='0.0.0.0', port=8000)
+```
+
 Salve o arquivo e rode o docker na vm 
 
 ```bash

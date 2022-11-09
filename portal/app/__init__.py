@@ -121,6 +121,6 @@ app.config['MAIL_USE_SSL'] = os.environ.get("MAIL_USE_SSL")
 mail.init_app(app)
 
 #           Importando as rotas api
-# from app.controllers.apis import login, auth,first_login, logout, users
+from app.controllers.apis import teste
 # Importando as rotas de WebView
 from app.controllers.view import default
