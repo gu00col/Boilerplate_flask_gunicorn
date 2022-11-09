@@ -1,1 +1,0 @@
-docker rm -f nginx portal && docker rmi -f portal_nginx portal_flask_app && docker-compose up -d && docker network connect cashfylabs_default nginx && docker network connect cashfylabs_default portal
