@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  flask_app:
+    container_name: portal
+    restart: always
+    build: ./portal
+    volumes:
+      - ./portal:/app
+    ports:
+      - "8000"
+    command: gunicorn -w 2 -b 0.0.0.0:8000 wsgi:app
+    environment:
+      - VIRTUAL_HOST=portal.outraforma.com.br
+      - LETSENCRYPT_HOST=portal.outraforma.com.br
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge
+    name: proxy

@@ -1,0 +1,382 @@
+/*  Cor principal */
+
+.bg-principal {
+ background: #ffc60e !important;
+}
+.bg-secundaria {
+  background: #1a1c20 !important;
+}
+
+.bg-desativado {
+  
+  color: #a1a1a1 !important;
+  text-decoration: line-through !important;
+  
+}
+
+.text-principal {
+   color: #ffc60e !important;
+}
+.text-secundaria {
+  color: #1a1c20 !important;
+}
+.text-preto {
+  color: #1a1c20 !important;
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.link-secundario {
+  color: #1a1c20 !important;
+  text-decoration: none !important;
+}
+.link-secundario:hover {
+  color: #ffc60e !important;
+}
+.link-secundario:active {
+  color: #ffc60e !important;
+}
+
+.page-item .disabled{
+  color: #a1a1a1 !important;
+  text-decoration: none !important;
+}
+
+.link-secundario:disabled{
+  color: #a1a1a1 !important;
+  text-decoration: none !important;
+}
+/* Personalizado */
+
+.form-control:focus{
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+}
+
+.load-login{
+  background: rgba(236, 200, 0, 0.548)!important;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  
+}
+
+.btn-principal {
+  background: #ffc60e !important;
+  color: #1a1c20 !important;
+
+}
+.btn-principal:hover{
+  background:transparent !important;
+  border: 1px solid #ffc60e !important;
+}
+
+.btn-secundario {
+  background: #1a1c20 !important;
+  color: #ffffff !important;
+
+}
+.btn-secundario:hover{
+  background: #1a1c20 !important;
+  color: #ffc60e !important;
+  
+}
+
+.btn-transparente {
+  background: transparent !important;
+  color: #1a1c20 !important;
+
+}
+.btn-transparente:hover{
+  color: #ffc60e !important;
+  
+}
+
+.btn-outline-principal {
+  background: transparent !important;
+  border: 1px solid #ffc60e !important;
+  color: #ffc60e !important;
+}
+.btn-outline-principal:hover {
+  background: transparent !important;
+  border: 1px solid #1a1c20 !important;
+  color: #1a1c20 !important;
+}
+
+.btn-outline-secundario {
+  background: transparent !important;
+  border: 1px solid #1a1c20 !important;
+  color: #1a1c20 !important;
+}
+.btn-outline-secundario:hover {
+  background: transparent !important;
+  border: 1px solid #686868 !important;
+  color: #686868 !important;
+}
+
+.load-paginas{
+  background: rgba(0, 0, 0, 0.089)!important;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+}
+
+.img-avatar{
+  width: 50px !important;
+  border-radius: 50px !important;
+}
+
+.link-menu {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.link-menu:hover {
+  color: #ffc60e !important;
+}
+
+.link-menu.active {
+  background: #ffc60e !important;
+}
+
+.link-menu.active:hover {
+  background: #ffffff !important;
+}
+
+.offcanvas-start {
+  width: 280px !important;
+}
+
+.offcanvas {
+  background: #212529 !important;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.btn-close {
+  background: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0px !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  opacity: 1 !important;
+}
+
+
+.page-active {
+  
+  color: #ffc60e !important;
+}
+
+
+/* Estilização de mouse para tabelas */
+
+.table-mouse {
+  cursor: pointer !important;
+  border-radius: 0 !important;
+}
+.mouse {
+  cursor: pointer !important;
+  border-radius: 0 !important;
+}
+.mouse:hover {
+  background: rgba(201, 201, 201, 0.5) !important;
+}
+
+.table-mouse:hover{
+  background: #f8f8f8 !important;
+  color: #212529 !important;
+  border-bottom-color: #8a8106 !important;
+}
+
+
+/* BTNS BUSCA Responsivo */
+
+
+.btns-cliente-busca{
+  width: 50% !important;
+}
+
+
+/* Timeline */
+
+.timeline-1 {
+  border-left: 3px solid #ffc60e;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: white;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 50px 20px 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 75%;
+  }
+  
+  @media (max-width: 767px) {
+  .timeline-1 {
+  max-width: 98%;
+  padding: 25px;
+  }
+  }
+  
+  .timeline-1 .event {
+  border-bottom: 1px dashed #000;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  }
+  
+  @media (max-width: 767px) {
+  .timeline-1 .event {
+  padding-top: 30px;
+  }
+  }
+  
+  .timeline-1 .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+  }
+  
+  .timeline-1 .event:before,
+  .timeline-1 .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  }
+  
+  .timeline-1 .event:before {
+  left: -207px;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+  }
+  
+  @media (max-width: 767px) {
+  .timeline-1 .event:before {
+  left: 0px;
+  text-align: left;
+  }
+  }
+  
+  .timeline-1 .event:after {
+  -webkit-box-shadow: 0 0 0 3px #ffc60e;
+  box-shadow: 0 0 0 3px #ffc60e;
+  left: -55.8px;
+  background: #fff;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  content: "";
+  top: 5px;
+  }
+  
+  @media (max-width: 767px) {
+  .timeline-1 .event:after {
+  left: -31.8px;
+  }
+  }
+
+  /* Prospecção time line */
+
+
+  ul.timeline-3 {
+    list-style-type: none;
+    position: relative;
+    }
+    ul.timeline-3:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+    }
+    ul.timeline-3 > li {
+    margin: 20px 0;
+    padding-left: 20px;
+    }
+    ul.timeline-3 > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #ffc60e;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    }
+
+
+    /* toggle checkboxes */
+
+    /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffc60e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffc60e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
