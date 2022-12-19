@@ -61,7 +61,7 @@ No diretório principal rode o comando
 ```
 Após instalar o docker rode os comandos no diretório principal
 ```bash
-   docker-compose up -d
+   docker-compose up --build -d
 ```
 
 ### Testando
@@ -93,7 +93,7 @@ app.run(debug=False, host='0.0.0.0', port=8000)
 Salve o arquivo e rode o docker na vm 
 
 ```bash
-   docker-compose up -d
+   docker-compose up --build -d
 ```
 
 com os padrões alterados o proxy vai linkar o servidor do flask com o gunicorn automaticamente no nginx
